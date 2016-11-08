@@ -1,0 +1,10 @@
+version: "2"
+services:
+  selenium:
+    build:
+      context: selenium
+  ruby:
+    build:
+      context: ruby
+    volumes:
+      - "./share:/tmp/share"
